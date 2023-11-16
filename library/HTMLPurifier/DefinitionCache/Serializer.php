@@ -37,7 +37,7 @@ class HTMLPurifier_DefinitionCache_Serializer extends HTMLPurifier_DefinitionCac
         if (!$this->_prepareDir($config)) {
             return false;
         }
-        return $this->_($file, serialize($def), $config);
+        return $this->_write($file, serialize($def), $config);
     }
 
     /**
@@ -57,7 +57,7 @@ class HTMLPurifier_DefinitionCache_Serializer extends HTMLPurifier_DefinitionCac
         if (!$this->_prepareDir($config)) {
             return false;
         }
-        return $this->_($file, serialize($def), $config);
+        return $this->_write($file, serialize($def), $config);
     }
 
     /**
